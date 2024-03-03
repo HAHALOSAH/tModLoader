@@ -230,9 +230,9 @@ internal static class InstallVerifier
 	// Check if GOG install is correct
 	private static void CheckGoG()
 	{
-		if (!HashMatchesFile(vanillaExePath, gogHash) && !HashMatchesFile(vanillaExePath, steamHash)) {
+		/*if (!HashMatchesFile(vanillaExePath, gogHash) && !HashMatchesFile(vanillaExePath, steamHash)) {
 			ErrorReporting.FatalExit(Language.GetTextValue("tModLoader.GOGHashMismatch", vanillaExePath, TerrariaVersion, CheckExe));
-		}
+		}*/
 
 		if (Path.GetFileName(vanillaExePath) != CheckExe) {
 			string pathToCheckExe = Path.Combine(Path.GetDirectoryName(vanillaExePath), CheckExe);
